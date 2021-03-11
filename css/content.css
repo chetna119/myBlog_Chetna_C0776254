@@ -1,0 +1,854 @@
+/* External CSS */
+html {
+    scroll-behavior: smooth;
+  }
+  /* styles for body */
+body { 
+    background: -webkit-linear-gradient(90deg,#1d1d1c, #A3C6C4); /* Safari and Chrome */
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 40%;
+    height: 40%;
+}
+
+/* styles for adopting mobile-first strategy */
+
+/* Id assigned in html files && Style for id= container */
+#container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for logo */
+header {
+    margin-top: 0.2em;
+    background-color: transparent;
+    border-radius: 0.5em;
+}
+
+
+/* Styles for nav bar containing links */
+nav {
+
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+   
+   /* margin-top: -1.5em; */
+}
+
+nav ul{
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+nav li {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c3334;
+    border-radius: .5em;
+    margin: 0.3em;
+    padding: 0.4em;
+    list-style-type: none;
+   
+}
+
+
+nav li a:link{
+    color: #A3C6C4 ;
+}
+/* when the link is visible */
+nav li a:visited{
+    color:#A3C6C4;
+}
+
+/* pseudo class when hover in over link */
+nav li a:hover{
+    font-style: italic;
+    color: indianred;
+}
+nav li a:active{
+    color: #1c3334;
+} 
+
+
+.text-container p:nth-child(1){
+    font-family: pacifico ;
+    font-weight: bold;
+    color: #3e6858;
+    font-size: 19px;
+
+}
+
+.text-container p:nth-child(2){
+    font-family: pacifico;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #032a2c;
+    font-size: 30px;
+}
+
+.text-container p:nth-child(3){
+    font-family: myriad pro regular;
+    color: #3e6858;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.text-container p{
+    line-height: 0px;
+    margin: 30px 0px 20px;
+}
+
+.text-container{
+    position: absolute;
+    left: 50%;
+    top: 2%;
+}
+/* styles for mobile class */
+.mobile{
+    display: inline;
+}
+
+/* styles for the desktop */
+.desktop{
+    display: none;
+}
+
+.contact {
+    background-color: transparent;
+    color: #1d1d1c;
+    text-decoration: underline;
+    padding: 0;
+  }
+
+  .contact-container body{
+
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #262626;
+  }
+  .contact-container ul{
+    display: flex;
+    text-align: center;
+  }
+  .contact-container ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  .contact-container ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    /* background: #d35400; */
+    border-radius: 50%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
+  }
+  .contact-container ul li:nth-child(1):before{
+    background: #4267B2;
+  }
+  .contact-container ul li:nth-child(2):before{
+    background: #1DA1F2;
+  }
+  .contact-container ul li:nth-child(3):before{
+    background: #E1306C;
+  }
+  .contact-container ul li:nth-child(4):before{
+    background: #2867B2;
+  }
+  .contact-container ul li:nth-child(5):before{
+    background: #ff0000;
+  }
+  .contact-container ul li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    /* box-shadow: 0 0 15px #d35400; */
+  }
+  .contact-container ul li:nth-child(1):hover:before{
+    box-shadow: 0 0 15px #4267B2;
+  }
+  .contact-container ul li:nth-child(2):hover:before{
+    box-shadow: 0 0 15px #1DA1F2;
+  }
+  .contact-container ul li:nth-child(3):hover:before{
+    box-shadow: 0 0 15px #E1306C;
+  }
+  .contact-container ul li:nth-child(4):hover:before{
+    box-shadow: 0 0 15px #2867B2;
+  }
+  .contact-container ul li:nth-child(5):hover:before{
+    box-shadow: 0 0 15px #ff0000;
+  }
+  .contact-container ul li:nth-child(1):hover{
+    color: #456cba;
+    box-shadow: 0 0 15px #4267B2;
+    text-shadow: 0 0 15px #4267B2;
+  }
+  .contact-container ul li:nth-child(2):hover{
+    color: #26a4f2;
+    box-shadow: 0 0 15px #1DA1F2;
+    text-shadow: 0 0 15px #1DA1F2;
+  }
+  .contact-container ul li:nth-child(3):hover{
+    color: #e23670;
+    box-shadow: 0 0 15px #E1306C;
+    text-shadow: 0 0 15px #E1306C;
+  }
+  .contact-container ul li:nth-child(4):hover{
+    color: #2a6cbb;
+    box-shadow: 0 0 15px #2867B2;
+    text-shadow: 0 0 15px #2867B2;
+  }
+  .contact-container ul li:nth-child(5):hover{
+    color: #ff1a1a;
+    box-shadow: 0 0 15px #ff0000;
+    text-shadow: 0 0 15px #ff0000;
+  }
+
+
+/* Styles for main div containing the information */
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 1em;
+    /* opacity: 0.85; */
+    background-color: #A3C6C4;
+    box-shadow: 2px 2px 12px gray;
+}
+
+/* styles for footer */
+footer {
+    font-size: .7em;
+    text-align: center;
+      color: #A3C6C4;
+      padding: .5em;
+      margin-bottom: 1em;
+  
+}
+
+img{
+    width: 40%;
+    height: 40%;
+}
+  .info{
+  font-family: cursive;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: #1c3334;
+    line-height: 26px;
+  }
+  .info h2{
+    font-size: 27px;
+    margin: 3px 0;
+  }
+  .info span{
+    color: #1c3334;
+  }
+  
+  /* styles for the article elememnt */
+  article {
+      background-color: transparent;
+      float: left;
+      margin: 0.5%;
+      padding: 0.5%;
+      width: 31%;
+      text-align: center;
+    }
+  
+    article img {
+      border: solid 0.1em #1d1d1c;
+    }
+  
+    article div {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    /* styles for the paragraphs inside the main article element */
+    article p {
+      color: #000000;
+      margin-top: 2%;
+      padding: 1%;
+      text-align: left;
+    }
+  
+    /* styles for the ul in the article element */
+    article ul {
+      text-align: left;
+    }
+    .flex-container {
+      display: grid;
+    }
+
+    .timeline ul li h3{
+      margin: 0;
+      padding: 0;
+      font-weight: 600;
+      color: indianred;
+  
+    }
+    .tableT
+    {
+      margin: 25px ;
+      padding: 50px;
+
+    }
+    .tableT th {
+    
+      font-weight: 600;
+      color: indianred;
+  
+    }
+    .tableT  th ,td
+    {
+      padding: 10px;
+      border: 1px solid black;
+
+    }
+ 
+/* style for media query for tablet viewport target- min width 480px */
+@media only screen and (min-width:688px) {
+
+    body {
+        background: -webkit-linear-gradient(90deg,#1d1d1c, #A3C6C4); /* Safari and Chrome */
+        background-attachment: fixed;
+    }
+
+    nav li {
+        float: left;
+        width: 15%;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-left: 0;
+        padding-right: 0;
+        background-color: transparent;
+        list-style-type: none;
+
+    }
+
+    /* styles for main */
+    main {
+        clear: left;
+        margin-top: 6em;
+        border-radius: 0;
+    }
+
+    /* styles for mobile class */
+    .mobile{
+        display: none;
+    }
+
+    /* styles for desktop */
+    .desktop{
+        display: inline;
+    }
+
+    /* styles for tablet class */
+    .tablet{
+        display: block;
+    }
+
+    nav li a:link{
+        color: #1c3334 ;
+    }
+    /* when the link is visible */
+    nav li a:visited{
+        color:#1c3334;
+    }
+    
+    /* pseudo class when hover in over link */
+    nav li a:hover{
+        font-style: italic;
+        color: indianred;
+    }
+    nav li a:active{
+        color: #1c3334;
+    } 
+
+    .text-container p:nth-child(1){
+        font-family: pacifico ;
+        font-weight: bold;
+        color: #7fc7ac;
+        font-size: 22px;
+
+    }
+
+    .text-container p:nth-child(2){
+        font-family: pacifico;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #032a2c;
+        font-size: 60px;
+    }
+
+    .text-container p:nth-child(3){
+        font-family: myriad pro regular;
+        color: #7fc7ac;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .text-container p{
+        line-height: 0px;
+        margin: 45px 0px 25px;
+    }
+
+    .text-container{
+        position: absolute;
+        left: 40%;
+        top: 15%;
+        transform: translate(10%, -13%);
+    }
+
+    
+      .info{
+      font-family: cursive;
+        position: absolute;
+        bottom: 20px;
+        text-align: center;
+        width: 100%;
+        color: #1c3334;
+        line-height: 26px;
+      }
+      .info h2{
+        font-size: 27px;
+        margin: 3px 0;
+      }
+      .info span{
+        color: #1c3334;
+      }
+      
+      /* styles for the article elememnt */
+      article {
+          background-color: transparent;
+          float: left;
+          margin: 0.5%;
+          padding: 0.5%;
+          width: 31%;
+          text-align: center;
+        }
+      
+        /* styles for the images inside the articles' elements - nutrition page */
+        article img {
+          border: solid 0.1em #1d1d1c;
+        }
+      
+        article div {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      
+        /* styles for the paragraphs inside the main article element */
+        article p {
+          color: #000000;
+          margin-top: 2%;
+          padding: 1%;
+          text-align: left;
+        }
+      
+        /* styles for the ul in the article element */
+        article ul {
+          text-align: left;
+        }
+        .flex-container {
+          display: grid;
+        }
+    
+    footer{
+        color: #7fc7ac;
+        padding: .5em;
+        margin-bottom: 1em;
+    }
+
+    .timeline{
+        position: relative;
+        margin: 50px auto;
+        width: 1000px;
+        padding: 40px 0;
+        box-sizing: border-box;
+        display: grid;
+    }
+
+    .timeline::before{
+
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+        background-color: #3e6858;
+    }
+
+    .timeline ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .timeline ul li{
+        list-style: none;
+        position: relative;
+        width: 50%;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+
+    .timeline ul li:nth-child(odd){
+        float: left;
+        text-align: right;
+        clear: both;
+    }
+
+    .timeline ul li:nth-child(even){
+        float: right;
+        text-align: left;
+        clear: both;
+    }
+
+    .content{
+      padding-bottom: 20px;
+    }
+
+    .timeline ul li:nth-child(odd)::before{
+
+      content: '';
+      position: absolute;
+      width: 10px;
+      top: 24px;
+      right: -6px;
+      height: 10px;
+      background: #3e6858;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px gray;
+    }
+
+    .timeline ul li:nth-child(even)::before{
+
+      content: '';
+      position: absolute;
+      width: 10px;
+      top: 24px;
+      left: -4px;
+      height: 10px;
+      background: #3e6858;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px gray;
+    }
+    
+    .timeline ul li h3{
+      margin: 0;
+      padding: 0;
+      font-weight: 600;
+      color: indianred;
+
+    }
+
+    .timeline ul li p{
+      margin: 10px 0 0;
+      padding: 0;
+    }
+
+    .timeline ul li .time h4{
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+    }
+
+    .timeline ul li:nth-child(odd) .time{
+
+      position: absolute;
+      top: 12px;
+      right:-165px ;
+      margin: 0;
+      padding: 8px 16px;
+      background: transparent;
+      color: #3e6858;
+      border-radius: 18px;
+      box-shadow: 0 0 0 gray;
+    }
+
+    .timeline ul li:nth-child(even) .time{
+
+      position: absolute;
+      top: 12px;
+      left:-165px ;
+      margin: 0;
+      padding: 8px 16px;
+      background: transparent;
+      color: #3e6858;
+      border-radius: 18px;
+      box-shadow: 0 0 0 gray;
+    }
+
+
+
+    .contact {
+        background-color: transparent;
+        color: #1d1d1c;
+        text-decoration: underline;
+        padding: 0;
+      }
+    
+      .contact-container body{
+    
+        display: flex;
+        height: 100vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        background: #262626;
+      }
+      .contact-container ul{
+        display: flex;
+        text-align: center;
+      }
+      .contact-container ul li{
+        position: relative;
+        display: block;
+        color: #666;
+        font-size: 30px;
+        height: 60px;
+        width: 60px;
+        background: #171515;
+        line-height: 60px;
+        border-radius: 50%;
+        margin: 0 15px;
+        cursor: pointer;
+        transition: .5s;
+      }
+      .contact-container ul li:before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: inherit;
+        width: inherit;
+        /* background: #d35400; */
+        border-radius: 50%;
+        transform: scale(.9);
+        z-index: -1;
+        transition: .5s;
+      }
+      .contact-container ul li:nth-child(1):before{
+        background: #4267B2;
+      }
+      .contact-container ul li:nth-child(2):before{
+        background: #1DA1F2;
+      }
+      .contact-container ul li:nth-child(3):before{
+        background: #E1306C;
+      }
+      .contact-container ul li:nth-child(4):before{
+        background: #2867B2;
+      }
+      .contact-container ul li:nth-child(5):before{
+        background: #ff0000;
+      }
+      .contact-container ul li:hover:before{
+        filter: blur(3px);
+        transform: scale(1.2);
+        /* box-shadow: 0 0 15px #d35400; */
+      }
+      .contact-container ul li:nth-child(1):hover:before{
+        box-shadow: 0 0 15px #4267B2;
+      }
+      .contact-container ul li:nth-child(2):hover:before{
+        box-shadow: 0 0 15px #1DA1F2;
+      }
+      .contact-container ul li:nth-child(3):hover:before{
+        box-shadow: 0 0 15px #E1306C;
+      }
+      .contact-container ul li:nth-child(4):hover:before{
+        box-shadow: 0 0 15px #2867B2;
+      }
+      .contact-container ul li:nth-child(5):hover:before{
+        box-shadow: 0 0 15px #ff0000;
+      }
+      .contact-container ul li:nth-child(1):hover{
+        color: #456cba;
+        box-shadow: 0 0 15px #4267B2;
+        text-shadow: 0 0 15px #4267B2;
+      }
+      .contact-container ul li:nth-child(2):hover{
+        color: #26a4f2;
+        box-shadow: 0 0 15px #1DA1F2;
+        text-shadow: 0 0 15px #1DA1F2;
+      }
+      .contact-container ul li:nth-child(3):hover{
+        color: #e23670;
+        box-shadow: 0 0 15px #E1306C;
+        text-shadow: 0 0 15px #E1306C;
+      }
+      .contact-container ul li:nth-child(4):hover{
+        color: #2a6cbb;
+        box-shadow: 0 0 15px #2867B2;
+        text-shadow: 0 0 15px #2867B2;
+      }
+      .contact-container ul li:nth-child(5):hover{
+        color: #ff1a1a;
+        box-shadow: 0 0 15px #ff0000;
+        text-shadow: 0 0 15px #ff0000;
+      }
+
+
+
+  .info{
+  font-family: cursive;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: #1c3334;
+    line-height: 26px;
+  }
+  .info h2{
+    font-size: 27px;
+    margin: 3px 0;
+  }
+  .info span{
+    color: #1c3334;
+  }
+    
+
+}
+
+/* media query for desktop view port*/
+@media only screen and (min-width:1044px) {
+   
+    body {
+        background: -webkit-linear-gradient(90deg,#1d1d1c, #A3C6C4); /* Safari and Chrome */
+        background-attachment: fixed;
+    }
+
+    header{
+        text-align: left;
+        
+    }
+
+    img{
+        width: 20%;
+        height: 20%;
+    }
+
+    nav {
+        float: right;
+        margin-top: -7em;
+        margin-bottom: 0;
+        width: 50%;
+    }
+    /* styles for ul in nav */
+    nav ul {
+        margin: 0;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+
+    /* styles for li in nav */
+    nav li {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 20%;
+    }
+
+  
+    .text-container p:nth-child(1){
+        font-family: pacifico ;
+        font-weight: bold;
+        color: #7fc7ac;
+        font-size: 22px;
+
+    }
+
+    .text-container p:nth-child(2){
+        font-family: pacifico;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #032a2c;
+        font-size: 60px;
+    }
+
+    .text-container p:nth-child(3){
+        font-family: myriad pro regular;
+        color: #7fc7ac;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .text-container p{
+        line-height: 0px;
+        margin: 45px 0px 25px;
+    }
+
+    .text-container{
+        position: absolute;
+        left: 17%;
+        top: 15%;
+        transform: translate(13%, -13%);
+    }
+
+/* styles for the article elememnt */
+article {
+    background-color: transparent;
+    float: left;
+    margin: 0.5%;
+    padding: 0.5%;
+    width: 31%;
+    text-align: center;
+  }
+
+  /* styles for the images inside the articles' elements - nutrition page */
+  article img {
+    border: solid 0.1em #1d1d1c;
+  }
+
+  article div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* styles for the paragraphs inside the main article element */
+  article p {
+    color: #000000;
+    margin-top: 2%;
+    padding: 1%;
+    text-align: left;
+  }
+
+  /* styles for the ul in the article element */
+  article ul {
+    text-align: left;
+  }
+  .flex-container {
+    display: flex;
+  }
+}

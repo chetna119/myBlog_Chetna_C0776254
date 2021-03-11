@@ -1,0 +1,483 @@
+/* External CSS */
+html {
+    scroll-behavior: smooth;
+  }
+  /* styles for body */
+body { 
+    background: -webkit-linear-gradient(90deg,#1d1d1c, #A3C6C4); /* Safari and Chrome */
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 40%;
+    height: 40%;
+}
+
+/* styles for adopting mobile-first strategy */
+
+/* Id assigned in html files && Style for id= container */
+#container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for logo */
+header {
+    margin-top: 0.2em;
+    background-color: transparent;
+    border-radius: 0.5em;
+}
+
+
+/* Styles for nav bar containing links */
+nav {
+
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+   
+   /* margin-top: -1.5em; */
+}
+
+nav ul{
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+nav li {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c3334;
+    border-radius: .5em;
+    margin: 0.3em;
+    padding: 0.4em;
+    list-style-type: none;
+   
+}
+
+
+nav li a:link{
+    color: #A3C6C4 ;
+}
+/* when the link is visible */
+nav li a:visited{
+    color:#A3C6C4;
+}
+
+/* pseudo class when hover in over link */
+nav li a:hover{
+    font-style: italic;
+    color: indianred;
+}
+nav li a:active{
+    color: #1c3334;
+} 
+
+
+.text-container p:nth-child(1){
+    font-family: pacifico ;
+    font-weight: bold;
+    color: #3e6858;
+    font-size: 19px;
+
+}
+
+.text-container p:nth-child(2){
+    font-family: pacifico;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #032a2c;
+    font-size: 30px;
+}
+
+.text-container p:nth-child(3){
+    font-family: myriad pro regular;
+    color: #3e6858;
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.text-container p{
+    line-height: 0px;
+    margin: 30px 0px 20px;
+}
+
+.text-container{
+    position: absolute;
+    left: 50%;
+    top: 2%;
+}
+/* styles for mobile class */
+.mobile{
+    display: inline;
+}
+
+/* styles for the desktop */
+.desktop{
+    display: none;
+}
+
+
+/* Styles for main div containing the information */
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 1em;
+    /* border-radius: 2em 0 2em 0; */
+    opacity: 0.85;
+    
+}
+
+/* styles for footer */
+footer {
+    font-size: .7em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+img{
+    width: 30%;
+    height: 30%;
+}
+
+.about-container{
+    width: auto;
+   
+    background-color: #A3C6C4;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px #1d1d1c;
+    display: flex;
+    margin: -7% auto 20px auto;
+    position: relative;
+    margin-top: auto;
+}
+
+.about-text{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-text h2{
+    color: indianred;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    line-height: 0px;
+
+}
+
+.about-text p, ul{
+    color: #3e6858;
+    font-size: 30px;
+    font-family: myriad pro;
+    font-weight: bold;
+   
+    text-align: center;
+
+}
+
+.skills{
+    display: none;
+}
+
+.skills h2{
+    color: indianred;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    line-height: 0px;
+   
+}
+
+/* style for media query for tablet viewport target- min width 480px */
+@media only screen and (min-width:688px) {
+
+    body {
+        background: -webkit-linear-gradient(90deg,#1d1d1c, #A3C6C4); /* Safari and Chrome */
+        background-attachment: fixed;
+    }
+
+    nav li {
+        float: left;
+        width: 15%;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-left: 0;
+        padding-right: 0;
+        background-color: transparent;
+        list-style-type: none;
+
+    }
+
+    /* styles for main */
+    main {
+        clear: left;
+        margin-top: 6em;
+        border-radius: 0;
+    }
+
+    /* styles for mobile class */
+    .mobile{
+        display: none;
+    }
+
+    /* styles for desktop */
+    .desktop{
+        display: inline;
+    }
+
+    /* styles for tablet class */
+    .tablet{
+        display: block;
+    }
+
+    nav li a:link{
+        color: #1c3334 ;
+    }
+    /* when the link is visible */
+    nav li a:visited{
+        color:#1c3334;
+    }
+    
+    /* pseudo class when hover in over link */
+    nav li a:hover{
+        font-style: italic;
+        color: indianred;
+    }
+    nav li a:active{
+        color: #1c3334;
+    } 
+
+    .text-container p:nth-child(1){
+        font-family: pacifico ;
+        font-weight: bold;
+        color: #7fc7ac;
+        font-size: 22px;
+
+    }
+
+    .text-container p:nth-child(2){
+        font-family: pacifico;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #032a2c;
+        font-size: 60px;
+    }
+
+    .text-container p:nth-child(3){
+        font-family: myriad pro regular;
+        color: #7fc7ac;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .text-container p{
+        line-height: 0px;
+        margin: 45px 0px 25px;
+    }
+
+    .text-container{
+        position: absolute;
+        left: 40%;
+        top: 15%;
+        transform: translate(10%, -13%);
+    }
+
+
+    /* styles for description list */
+    dt{
+        font-weight: bold;
+        margin-top: 0.7em;
+
+    }
+
+    .about-container{
+        width: 95%;
+        /* height: 330px; */
+        background-color: #A3C6C4;
+        border-radius: 20px;
+        box-shadow: 2px 2px 12px #1d1d1c;
+        display: flex;
+        margin: -7% auto 20px auto;
+        position: relative;
+    }
+    
+    .about-text{
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-text h2{
+        color: indianred;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        line-height: 0px;
+    
+    }
+
+    .about-text p{
+        color: #3e6858;
+        font-size: 30px;
+        font-family: myriad pro;
+        font-weight: bold;
+       
+        text-align: center;
+    
+    }
+
+    .skills{
+        width: 95%;
+        margin: 40px;
+        background-color: #A3C6C4;
+        border-radius: 20px;
+        box-shadow: 2px 2px 12px #1d1d1c;
+        display: flex;
+    }
+
+    .skills h2{
+        color: indianred;
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        line-height: 0px;
+       
+    }
+    .skills ul 
+    {
+
+    }
+    
+    .qualities{
+        width: 90%;
+        margin: auto;
+        background-color: #A3C6C4;
+        border-radius: 20px;
+        box-shadow: 2px 2px 12px #1d1d1c;
+        display: flex;
+        padding: 35px;
+    }
+
+
+    .qualities h3{
+        color: indianred;
+        font-family: cursive;
+        font-size: 25px;
+        text-align: center;
+        line-height: 0px;
+        margin: 25px;
+       
+    }
+    .qualities img 
+    {
+        float: right;
+    }
+
+}
+
+/* media query for desktop view port*/
+@media only screen and (min-width:1044px) {
+   
+    body {
+        background: -webkit-linear-gradient(90deg,#1d1d1c, #A3C6C4); /* Safari and Chrome */
+        background-attachment: fixed;
+    }
+
+    header{
+        text-align: left;
+        
+    }
+
+    img{
+        width: 20%;
+        height: 20%;
+    }
+
+    nav {
+        float: right;
+        margin-top: -7em;
+      
+        margin-bottom: 0;
+        width: 50%;
+    }
+    /* styles for ul in nav */
+    nav ul {
+        margin: 0;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+
+    /* styles for li in nav */
+    nav li {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 20%;
+    }
+
+    .text-container p:nth-child(1){
+        font-family: pacifico ;
+        font-weight: bold;
+        color: #7fc7ac;
+        font-size: 22px;
+
+    }
+
+    .text-container p:nth-child(2){
+        font-family: pacifico;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #032a2c;
+        font-size: 60px;
+    }
+
+    .text-container p:nth-child(3){
+        font-family: myriad pro regular;
+        color: #7fc7ac;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .text-container p{
+        line-height: 0px;
+        margin: 45px 0px 25px;
+    }
+
+    .text-container{
+        position: absolute;
+        left: 17%;
+        top: 15%;
+        transform: translate(13%, -13%);
+    }
+
+    
+}
+.tableT
+    {
+      margin: 25px ;
+      padding: 50px;
+
+    }
+    .tableT th {
+    
+      font-weight: 600;
+      color: indianred;
+  
+    }
+    .tableT  th ,td
+    {
+      padding: 10px;
+      border: 1px solid black;
+
+    }
